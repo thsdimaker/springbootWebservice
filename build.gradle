@@ -31,6 +31,9 @@ dependencies {
 		exclude group: "org.hamcrest", module: "hamcrest-core"
 	}
 
+	//External Libraries Only Using Performance Test
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6'
+
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
