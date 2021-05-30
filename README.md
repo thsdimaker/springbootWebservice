@@ -11,6 +11,14 @@
 
 
 ## 3) 개발 시작
+
+* 2021.05.30
+```
+1. JPA와 DB설정 및 동작 테스트
+```
+
+
+
 * 2021.05.29
 
 ```
@@ -27,6 +35,49 @@ ex) HelloController, H2 db 성능테스트
 
 ## 4) 문제점 발생
 
+* 2021.05.30
+
+```
+Problem)
+(Db테이블 생성 오류)
+org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+
+Solution)
+yml 띄어쓰기 문제 해결
+
+How?) @id 어노테이션 javax.persistence 로 제대로 임폴트 되었는지 확인 - > jpa External libraries 확인
+- > Junit Dependencies 확인 - > junit4 정확히 임폴트 확인 - > 불필요한 junit5 path 설정 되어 있는 의존성 삭제 - >
+ 추후 오류 지속 - >Hibernate 오류 확인 - > application.yml 쪽 문제 있는 것 확인 - > 검색 후 띄어쓰기 문제 확인
+```
+
+
+```
+Problem)
+
+상황 : Junit4로 테스트 중 Db연동 커넥션이 이루어지지 않음.
+
+Database "C:/Users/ ~" not found, 
+either pre-create it or allow remote database creation 
+(not recommended in secure environments) [90149-200] 
+
+
+
+Solution)
+(1시간 소모)
+이전에 진행했던 스프링 부트 프로젝트에서 같은 8082포트를 사용했기에
+[cmd]창 상황에서 8082 포트를 죽이고 다시 재설정
+
+How?)
+
+Junit 버전 확인(External Libraries) - >  import 된 Assertion 확인 - > 
+아무 이상 X - > Db 자체 이상이 있는것 확인 - > 포트 확인 - > h2 자체 8082 포트 사용하는 것 확인
+- > 8082가 계속해서 사용중이라 이전것 불러오는 상태 - > 8082 포트 죽임 - > 성공
+
+```
+
+
+* 2021.05.29
 ```
 Problem)
 H2 데이터베이스 실행 오류.(Windows 환경에서 아에 열리지 않음)
