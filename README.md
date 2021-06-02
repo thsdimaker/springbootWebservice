@@ -25,7 +25,7 @@ Spring MVC를 활용한 CRUD
 * 2021.06.03
 
 ```
-
+1. 06.02 미완성 목록들 추가 개발 
 ```
 
 
@@ -81,6 +81,20 @@ ex) HelloController, H2 db 성능테스트
 ```
 
 ## 4) 문제점 발생
+
+* 2021.06.02
+```
+Problem)
+(Db연결이 꺼진상태)
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Connection is broken: "java.net.SocketTimeoutException: connect timed out: localhost" [90067-199]
+
+Solution)
+그냥 단순 연동
+
+How?)
+H2가 메모리 방식이 아니라, 설치형 방식을 택했기 때문에, 항상 켜져있는걸로
+생각했었음. 
+```
 
 * 2021.05.30
 
