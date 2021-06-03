@@ -6,10 +6,24 @@
   개발Main : Windows 10
   
   Sub : WSL2(Ubuntu 18.0.4) - Linux 방식 배포 동시 연습
-  
-* jdk : 11.0.10
+
+
 * Springboot : 2.4.6
-* db : h2(1.4.200)
+
+  
+* JDK : 11.0.10
+
+
+* Db : h2(1.4.200)
+  
+
+* Css
+
+<ol>1. Bootstrap</ol>
+<ol>2. jumbotron-narrow</ol>
+  
+
+
 
 **-2) <u>프로젝트 개요</u>**
 
@@ -26,6 +40,9 @@ Spring MVC를 활용한 CRUD
 
 ```
 1. 06.02 미완성 목록들 추가 개발 
+2. 웹 계층 개발 시작
+ㄴ> 회원가입
+
 ```
 
 
@@ -60,8 +77,7 @@ Spring MVC를 활용한 CRUD
 
 * 2021.05.30
 ```
-1. JPA와 DB설정 및 동작 테스트 및 1차 빌드 배포 완료
-
+1. JPA와 DB설정 및 동작 테스트 및 1차 빌드 배포 테스트 완료
 ```
 
 
