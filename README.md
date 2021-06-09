@@ -35,7 +35,7 @@
 Spring MVC를 활용한 CRUD
 
 ## 2) 각 단계별 목표
-* 최대한 빠르게 CRUD 작성 및 Logic 이해
+* Rest API 개발 및 게시판 CRUD
 
 
 ## 3) 개발 기한 및 상세 기록사항
