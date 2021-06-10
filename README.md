@@ -2,6 +2,7 @@
 
 ![Main_Page](https://user-images.githubusercontent.com/59603054/120926322-55a53e00-c717-11eb-9105-70149c33c0bf.jpg)
 
+[클릭! 상세페이지 구현 확인 링크](https://github.com/thsdimaker/springbootWebservice/issues/1)
 
 ## 1)프로젝트 환경 및 개요
 
