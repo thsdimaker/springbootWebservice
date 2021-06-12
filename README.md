@@ -26,6 +26,16 @@
 
 <ol>1. Bootstrap</ol>
 <ol>2. jumbotron-narrow</ol>
+
+* Dependencies
+```
+1. 내장WAS
+2. H2 database
+3. Spring Data JPA
+4. Thymeleaf
+5. lombok
+6. Validation
+```
   
 
 
